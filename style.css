@@ -9,8 +9,10 @@
 body {
     height: 100vh;
     width: 100%;
-    background: blue;
+    background: none;
+   
 }
+/* Styling the navbar */
 
 .header {
     position: fixed;
@@ -24,9 +26,13 @@ body {
     align-items: center;
     z-index: 100;
 }
-
+.navbar{
+    margin-left: 50px;
+}
 .navbar a {
     position: relative;
+    /* left 40% is temporaty */
+    /* margin-left: 80px; */
     font-size: 16px;
     color: #fff;
     margin-right: 30px;
@@ -44,16 +50,19 @@ body {
     border-radius: 5px;
     transform: translateY(10px);
     opacity: 0;
+    transition: .5s ease;
 }
 
 .navbar a:hover:after {
-    transform: translateX(2px);
+    transform: translateY(0);
     opacity: 1;
 }
 
 .search-bar {
     width: 250px;
     height: 45px;
+    /* Margin right is temporary */
+    margin-right: 50px;
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 6px;
@@ -85,7 +94,106 @@ body {
     color: #fff;
 }
 
-.search-bar button span {
+.search-bar button{
     font-size: 22px;
 }
+/* Styling the logo */
 
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 91%;
+    height: 75%;
+    margin-top: 50px;
+    margin-bottom: 72px;
+    background: blue;
+    border-radius: 20px;
+}
+.item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    color: #fff;
+    background: green;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.item .logo{
+    color: #fff;
+    font-size: 30px;
+}
+.item-text h2{
+    font-size: 40px;
+    line-height: 1;
+}
+.item-text p{
+    font-size: 16px;
+    margin: 20px 0;
+}
+.social-icons a i{ 
+    color: #fff;
+    font-size: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .5s ease;
+
+}
+.social-icons a:hover i{
+   transform: scale(1.7);
+   color: blue;
+}
+/* Sign in section */
+.container .login-section{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+    color: #fff;
+
+}
+.login-section .form-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+.login-section .form-box h2{
+    text-align: center;
+    font-size: 25px;
+}
+.form-box .input-box{
+    width: 350px;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    padding: 30px 0;
+    position: relative;
+}
+.form-box input{
+    width: 100%;
+    height:100% ;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-right: 28px;
+}
+.form-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 600px;
+    pointer-events: none;
+
+}
