@@ -12,6 +12,13 @@ body {
     background: none;
    
 }
+.background{
+    background: url("images/sunset3.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
 /* Styling the navbar */
 
 .header {
@@ -20,14 +27,14 @@ body {
     left: 0;
     width: 100%;
     padding: 25px 13px;
-    background: rgb(0, 128, 255);
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 .navbar{
-    margin-left: 50px;
+    margin-left: 160px;
 }
 .navbar a {
     position: relative;
@@ -37,6 +44,7 @@ body {
     color: #fff;
     margin-right: 30px;
     text-decoration: none;
+    z-index: 1000px;
 }
 
 .navbar a::after {
@@ -57,12 +65,11 @@ body {
     transform: translateY(0);
     opacity: 1;
 }
-
 .search-bar {
     width: 250px;
     height: 45px;
     /* Margin right is temporary */
-    margin-right: 50px;
+    margin-right: 160px;
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 6px;
@@ -75,9 +82,11 @@ body {
     background-color: transparent;
     border: none;
     outline: none;
-    color: #fff;
-    padding-left: 10px;
+    color: #fff; 
     font-size: 16px;
+    padding-left: 10px;
+    
+   
 }
 
 .search-bar button {
@@ -97,6 +106,7 @@ body {
 .search-bar button{
     font-size: 22px;
 }
+
 /* Styling the logo */
 
 .container{
@@ -104,11 +114,17 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 91%;
+    /* origional */
+    width: 75%;
+    height: 550px;
+    margin-top: 20px;
+    /* width: 91%;
     height: 75%;
-    margin-top: 50px;
-    margin-bottom: 72px;
-    background: blue;
+    margin-top: 50px; */
+    /* margin-bottom: 72px; */
+    background: url("images/sunset3.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
     border-radius: 20px;
 }
 .item{
@@ -118,7 +134,7 @@ body {
     width: 58%;
     height: 100%;
     color: #fff;
-    background: green;
+    background: transparent;
     padding: 80px;
     display: flex;
     justify-content: space-between;
@@ -236,9 +252,22 @@ body {
    border: none;
    border-radius: 4px;
    cursor: pointer;
-   background: #f72d6a;
+   background: #331004;
    font-size: 16px;
    color: #fff;
    box-shadow: rgb(0,0,0,4);
 
+}
+.create-account{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 25px;
+}
+.create-account p a{
+    color: #fff;
+    font-weight: 600px;
+    text-decoration: none;
+}
+.create-account p a:hover{
+    text-decoration: underline;
 }
