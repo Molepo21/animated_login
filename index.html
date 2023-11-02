@@ -8,6 +8,7 @@
     <title>Sign up</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -22,8 +23,8 @@
         </nav>
         
         <form action="" class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button>
+            <input type="text" placeholder="Search..." id="searchInput">
+            <button onclick="searchBook()">
                 <i class='bx bx-search-alt-2' style='color:#fff'></i>
             </button>
         </form>
@@ -55,16 +56,30 @@
         <div class="login-section">
             <div class="form-box login">
                 <form action="">
-                    <h2>Sign In</h2>
+                    <h2>Books</h2>
+
                     <div class="input-box">
-                        <i class='icon bx bxs-lock'></i>
-                        <input type="email" required>
-                        <label for="">Email</label>
+                        <!-- <i class='icon bx bxs-lock'></i> -->
+                        <input type="email" id="bookname" required>
+                        <label for="">Book Name</label>
+                    </div>
+
+                    <div class="input-box">
+                        <!-- <i class='icon bx bxs-lock'></i> -->
+                        <input type="email" id="author" required>
+                        <label for="">Author</label>
+                    </div>
+
+                    <!-- recent update -->
+                    <div class="input-box">
+                        <!-- <i class='icon bx bxs-lock'></i> -->
+                        <input type="email" id="description" required>
+                        <label for="">Discription</label>
                     </div>
                     <div class="input-box">
-                        <i class='icon bx bxs-envelope'></i>
-                        <input type="password" required>
-                        <label for="">Password</label>
+                        <!-- <i class='icon bx bxs-envelope'></i> -->
+                        <input type="password" id="genre" required>
+                        <label for="">Genre</label>
                     </div>
                     <div class="remember-password">
 
@@ -72,7 +87,7 @@
                         <a href="#">Forgot password</a>
 
                     </div>
-                    <button class="btn">login</button>
+                    <button class="btn" onclick="signInUser(event)">SignUp</button>
                     <div class="create-account">
                         <p>Create A New Account? <a href="#" class="register-link">Sign Up</a></p>
                     </div>
@@ -81,6 +96,8 @@
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
+
 </body>
 
 </html>

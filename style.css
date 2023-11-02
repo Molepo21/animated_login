@@ -13,7 +13,7 @@ body {
    
 }
 .background{
-    background: url("images/sunset3.jpg") no-repeat;
+    background: url("images/sunset4.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -26,8 +26,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 25px 13px;
-    background: transparent;
+    padding: 11px 13px;
+    background: #3310045f;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,7 +122,8 @@ body {
     height: 75%;
     margin-top: 50px; */
     /* margin-bottom: 72px; */
-    background: url("images/sunset3.jpg") no-repeat;
+    /* background: url("images/sunset3.jpg") no-repeat; */
+    background-color: #5955559f;
     background-position: center;
     background-size: cover;
     border-radius: 20px;
@@ -162,7 +163,7 @@ body {
 }
 .social-icons a:hover i{
    transform: scale(1.7);
-   color: blue;
+   color: #fff;
 }
 /* Sign in section */
 .container .login-section{
@@ -202,6 +203,7 @@ body {
     outline: none;
     font-size: 16px;
     padding-right: 28px;
+    color: #fff;
     
     
 }
@@ -252,7 +254,7 @@ body {
    border: none;
    border-radius: 4px;
    cursor: pointer;
-   background: #331004;
+   background: #0e0603a4;
    font-size: 16px;
    color: #fff;
    box-shadow: rgb(0,0,0,4);
