@@ -163,7 +163,7 @@ body {
 }
 .social-icons a:hover i{
    transform: scale(1.7);
-   color: #fff;
+   color: #0870b6;
 }
 /* Sign in section */
 .container .login-section{
